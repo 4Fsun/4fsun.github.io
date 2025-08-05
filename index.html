@@ -1,130 +1,319 @@
-<!-- built with temper: https://temper.one -->
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moosa Kalimullah</title>
+    <meta name="description" content="Quantitative Finance student, photographer, content creator, and calisthenics athlete" />
+    <meta name="author" content="Moosa Kalimullah" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Moosa Kalinullah</title>
+    <meta property="og:title" content="Moosa Kalimullah" />
+    <meta property="og:description" content="Quantitative Finance student, photographer, content creator, and calisthenics athlete" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-  
-    <link class="googlefont" href="
-    https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap
-    " rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-  
-  <link rel="stylesheet" type="text/css" href="https://static.getslideframe.com/slideFrame.css" />
+    <style>
+      /* Reset and base styles */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
 
-  <style type="text/css" style="display:block">
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
-    font-weight: inherit;
-  }
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 8%;
+        --muted-foreground: 0 0% 46%;
+        --accent: 218 100% 50%;
+        --text-body: 16px;
+        --line-height-tight: 1.3;
+        --space-sm: 0.5rem;
+        --space-md: 0.75rem;
+        --space-lg: 1rem;
+        --space-xl: 1.5rem;
+      }
 
-  body {
-    background: #fefaff;
-    color: #005eff;
-    width: 100%;
-  }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: 0 0% 8%;
+          --foreground: 0 0% 92%;
+          --muted-foreground: 0 0% 65%;
+          --accent: 218 100% 60%;
+        }
+      }
 
-  /* FONT FACE */
-  
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: var(--text-body);
+        line-height: var(--line-height-tight);
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+        min-height: 100vh;
+        padding: 2rem 1rem;
+      }
 
-  /* PAGE */
-  .text {
-    font-family:"Chivo", sans-serif;
+      @media (min-width: 768px) {
+        body {
+          padding: 3rem 2rem;
+        }
+      }
 
-        display: none;
-    opacity: 0;
-    font-size: 3.5vw;
-    line-height: 3.5vw;
-            font-variant-ligatures: normal;
-    visibility: hidden;
-  }
+      .container {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
 
-  h1 {
-    font: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-  }
+      .prose {
+        max-width: 65ch;
+        line-height: var(--line-height-tight);
+      }
 
-  .text p, h1 {
-    opacity: 0;
-    display: none;
-    visibility: hidden;
-    animation: fadein .2s forwards ease-out;
-    padding: 1.4vw 10vw 2.1vw 3vw;
-  }
+      .prose p {
+        margin-bottom: var(--space-sm);
+      }
 
-  .text a {
-    text-decoration: underline;
-    text-decoration-skip: ink;
-    color: inherit;
-    padding-left: .5vw;
-    padding-right: .5vw;
-    margin-left: -.5vw;
-    margin-right: -.5vw;
-    cursor: pointer;
-  }
+      .prose p:last-child {
+        margin-bottom: 0;
+      }
 
-  .text a:hover {
-    text-decoration: none;
-  }
+      .space-y-3 > * + * {
+        margin-top: 0.75rem;
+      }
 
-  .text a:focus {
-    text-decoration: none;
-    outline: solid 4px rgba(0,0,0,.4);
-  }
+      .space-y-2 > * + * {
+        margin-top: 0.5rem;
+      }
 
-    ::selection {
-    background: #000;
-    background: rgba(0,0,0,.99);
-    color: #fff;
-  }
-  
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-      margin-top: 1.5vw;
-    }
+      .mt-6 {
+        margin-top: var(--space-xl);
+      }
 
-    100% {
-      opacity: 1;
-      margin-top: 0;
-    }
-  }
-  </style>
+      .pt-4 {
+        padding-top: 1rem;
+      }
 
-  <!-- DON’T REMOVE THE FOLLOWING LINE! -->
-  <script type="text/javascript">!function(){document.addEventListener("DOMContentLoaded",function(){var _0x1a2a="temper.one",_0x35df=!1,_0x71b1=document.scripts;for(var _0x4e3a=0;_0x4e3a<_0x71b1.length;_0x4e3a++)_0x71b1[_0x4e3a].src.includes(_0x1a2a)&&(_0x35df=!0);if(!_0x35df){var _0x15c2=document.querySelector(".text");_0x15c2&&_0x15c2.remove()}})}();</script>
+      .mb-3 {
+        margin-bottom: 0.75rem;
+      }
 
-</head>
-<body style="display:none;">
-  <div class="text">
-    <h1 style="animation-delay: .1s;">Hello. I am Moosa. A Quantitative Finance and Risk Management Science student, <a target="_blank" href="https://www.instagram.com/illneverseeheaven/">photographer</a>, content creator, and calisthenics athlete.&nbsp;</h1>
-                              <p style="animation-delay: 0.2s;">My professional life includes business development consultancy, content production, and modeling.&nbsp;</p>
-                                <p style="animation-delay: 0.3s;">I also work with sound. I create music with a <a target="_blank" href="https://www.instagram.com/donnywokman/">friend</a>. We are called&nbsp;<a target="_blank" href="https://www.instagram.com/pleasedontslouch/">slouch</a>.</p>
-                                <p style="animation-delay: 0.4s;">Here's my <a target="_blank" href="https://www.instagram.com/afsunmoosa/">instagram</a>, and <a target="_blank" href="mailto: moosakalimullah6@gmail.com ">email</a>.&nbsp;</p>
-                                <p style="animation-delay: 0.5s;">Some takes on life: time is not rigid, rest till you feel guilty and then rest a bit more, sunscreen always works, stretch, electrolytes are essential while fasting, pain&nbsp;≠ great art, great art = repetition, be kind,&nbsp; be observant.</p>
-                                <p style="animation-delay: 0.6s;">Only goal for the year: consume less media, music, and clothing. especially clothing.</p>
-                                <p style="animation-delay: 0.7s;">Monthly Suggestions:</p>
-                                <p style="animation-delay: 0.8s;">Article you should read:&nbsp;<a target="_blank" href="https://thecreativeindependent.com/people/bjork-on-nature-and-technology/">Björk on nature and technology</a></p>
-                                <p style="animation-delay: 0.9s;">Video you should watch: <a target="_blank" href="https://www.youtube.com/watch?v=L2EO3aXTWwg&amp;list=LL&amp;index=4">Patti Smith Interview | Advice to the Young</a></p>
-                                <p style="animation-delay: 1s;">Album you should listen to: <a target="_blank" href="https://youtube.com/playlist?list=PLMGNv-MPQX8OC7FostT2bFz1fxlipzdMB&amp;si=ChM_8s6QJiJkM79R">Groovy Indian Summer</a></p>
-                                <p style="animation-delay: 1.1s;">Book you should read: <a target="_blank" href="https://www.amazon.com/Disappearance-Rituals-Topology-Present/dp/1509542760">The Disappearance of Rituals</a></p>
-                                <p style="animation-delay: 1.2s;">Movie You Should Watch: <a target="_blank" href="https://letterboxd.com/film/omkara/">Omkara</a></p>
-                                <p style="animation-delay: 1.3s;">Anyway, here's a quote I love:</p>
-                                <p style="animation-delay: 1.4s;">“I also am other than what I imagine myself to be. To know this is forgiveness.” — Simone Weil</p>
-                                <p style="animation-delay: 1.5s;">That is all for now. I'll add more stuff with time. Also, hit me up on instagram if you want to lose to me at chess. Cache you later.</p>
-                                                                            </div>
+      .mt-4 {
+        margin-top: 1rem;
+      }
 
-  <!-- DON’T REMOVE THE FOLLOWING LINES! -->
-  <script type="text/javascript">const fs = 3.5;</script>
-  <script type="text/javascript" src="https://temper.one/temper-2411.js"></script>
-  <script type="text/javascript" src="https://static.getslideframe.com/slideFrame.min.js"></script>
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
 
-</body>
+      .pl-4 {
+        padding-left: 1rem;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        color: hsl(var(--foreground));
+      }
+
+      a {
+        color: hsl(var(--accent));
+        text-decoration: underline;
+        transition: opacity 0.2s ease;
+      }
+
+      a:hover {
+        opacity: 0.7;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      blockquote {
+        border-left: 2px solid hsl(var(--accent));
+        font-style: italic;
+        color: hsl(var(--muted-foreground));
+      }
+
+      cite {
+        display: block;
+        font-style: normal;
+        font-size: 0.875rem;
+      }
+
+      .not-italic {
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <main class="prose">
+        <div class="space-y-3">
+          <p>
+            Hello. I am Moosa. A Quantitative Finance and Risk Management Science student, 
+            <a 
+              href="https://www.instagram.com/illneverseeheaven/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              photographer
+            </a>, content creator, and model.
+          </p>
+
+          <p>
+            My professional life includes business development consultancy, content production, and modeling.
+          </p>
+
+          <p>
+            I also work with sound. I create music with a 
+            <a 
+              href="https://www.instagram.com/donnywokman/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              friend
+            </a>. We are called 
+            <a 
+              href="https://www.instagram.com/pleasedontslouch/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              slouch
+            </a>.
+          </p>
+
+          <p>
+            Here's my 
+            <a 
+              href="https://www.instagram.com/afsunmoosa/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              instagram
+            </a>, and 
+            <a 
+              href="mailto:moosakalimullah6@gmail.com"
+            >
+              email
+            </a>.
+          </p>
+
+          <p>
+            Some takes on life: time is not rigid, rest till you feel guilty and then rest a bit more, 
+            sunscreen always works, stretch, electrolytes are essential while fasting, pain ≠ great art, 
+            great art = repetition, be kind, be observant.
+          </p>
+
+          <p>
+            Only goal for the year: consume less media, music, and clothing. especially clothing.
+          </p>
+
+          <!-- Monthly Suggestions Section -->
+          <div class="mt-6 pt-4">
+            <h2 class="mb-3">
+              Monthly Suggestions:
+            </h2>
+            
+            <div class="space-y-2">
+              <p>
+                <strong>Article you should read:</strong> 
+                <a 
+                  href="https://thecreativeindependent.com/people/bjork-on-nature-and-technology/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Björk on nature and technology
+                </a>
+              </p>
+
+              <p>
+                <strong>Video you should watch:</strong> 
+                <a 
+                  href="https://www.youtube.com/watch?v=L2EO3aXTWwg&list=LL&index=4" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Patti Smith Interview | Advice to the Young
+                </a>
+              </p>
+
+              <p>
+                <strong>Album you should listen to:</strong> 
+                <a 
+                  href="https://youtube.com/playlist?list=PLMGNv-MPQX8OC7FostT2bFz1fxlipzdMB&si=ChM_8s6QJiJkM79R" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Groovy Indian Summer
+                </a>
+              </p>
+
+              <p>
+                <strong>Book you should read:</strong> 
+                <a 
+                  href="https://www.amazon.com/Disappearance-Rituals-Topology-Present/dp/1509542760" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  The Disappearance of Rituals
+                </a>
+              </p>
+
+              <p>
+                <strong>Movie You Should Watch:</strong> 
+                <a 
+                  href="https://letterboxd.com/film/omkara/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Omkara
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Quote Section -->
+          <div class="mt-6 pt-4">
+            <p>
+              Anyway, here's a quote I love:
+            </p>
+            
+            <blockquote class="mt-4 pl-4">
+              "I also am other than what I imagine myself to be. To know this is forgiveness." 
+              <cite class="mt-2 not-italic">— Simone Weil</cite>
+            </blockquote>
+          </div>
+
+          <div class="mt-6 pt-4">
+            <p>
+              That is all for now. I'll add more stuff with time. Also, hit me up on instagram if you want to lose to me at chess. Cache you later.
+            </p>
+          </div>
+
+          <!-- Three stars like Elijah's page -->
+          <div class="mt-6 pt-4 text-center">
+            <span>⋆⋆⋆</span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
